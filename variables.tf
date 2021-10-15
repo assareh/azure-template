@@ -12,6 +12,10 @@ variable "owner" {
   default     = "Andy Assareh"
 }
 
+variable "prefix" {
+  description = "The name prefix to prepend or append to resource names. This may become part of a public URL."
+}
+
 locals {
   common_tags = {
     owner              = var.owner
